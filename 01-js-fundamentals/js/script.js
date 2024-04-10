@@ -286,20 +286,112 @@ GOOD LUCK 😀
 //   console.log("Both win the tropy");
 // }
 // BONUS 1
-const scoreDolphins = (97 + 112 + 80) / 3;
-const scoreKoalas = (109 + 95 + 86) / 3;
-console.log(scoreDolphins, scoreKoalas);
+// const scoreDolphins = (97 + 112 + 80) / 3;
+// const scoreKoalas = (109 + 95 + 86) / 3;
+// console.log(scoreDolphins, scoreKoalas);
 
-if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
-  console.log("Dolphins win the trophy 🏆");
-} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
-  console.log("Koalas win the trophy 🏆");
-} else if (
-  scoreDolphins === scoreKoalas &&
-  scoreDolphins >= 100 &&
-  scoreKoalas >= 100
-) {
-  console.log("Both win the trophy!");
-} else {
-  console.log("Ooops!! No one wins the trophy 😭");
-}
+// if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+//   console.log("Dolphins win the trophy 🏆");
+// } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+//   console.log("Koalas win the trophy 🏆");
+// } else if (
+//   scoreDolphins === scoreKoalas &&
+//   scoreDolphins >= 100 &&
+//   scoreKoalas >= 100
+// ) {
+//   console.log("Both win the trophy!");
+// } else {
+//   console.log("Ooops!! No one wins the trophy 😭");
+// }
+////////////////////////////////////
+// The switch Statement
+
+// const day = prompt("enter your favourite day");
+// switch (day) {
+//   case "monday":
+//     console.log("on monday plan for all weak schedule");
+//     break;
+//   case "tuesday":
+//     console.log(" tuesday coding and studing");
+//     break;
+//   case "wensday":
+//     console.log("wenesday the funny day");
+//     break;
+//   case "thurusday":
+//     console.log("thurusday amazing day");
+//     break;
+//   case "friday":
+//     console.log("friday good day");
+//     break;
+//   case "saturday":
+//     console.log("the saturday first rest day");
+//     break;
+//   case "sunday":
+//     console.log("sunday the church day!");
+//     break;
+//   default:
+//     console.log("ooops not valid day");
+// }
+// const day = "sunday";
+// const day = prompt("enter your date");
+// if (day === "monday") {
+//   console.log("Plan course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("the rest day and church day");
+// } else {
+//   console.log("Not a valid day!");
+// }
+
+////////////////////////////////////
+// Statements and Expressions
+// 5 + 7;
+// 1029;
+// (true && false) || !false;
+// if (23 > 10) {
+//   console.log("23 is greater than 10");
+// }
+// const me = "safu";
+// console.log(`i am ${2024 - 2001} years old and my name is ${me}`);
+////////////////////////////////////
+// The Conditional (Ternary) Operator
+
+// const age = 22;
+// age >= 23
+//   ? console.log("i would like to have wine 🍷")
+//   : console.log("i would like to have juice 🥤");
+// const drink = age >= 21 ? "beer 🍺" : "juice 🥤";
+// console.log(drink);
+// let drink2;
+// if (age >= 18) {
+//   drink2 = "wine";
+// } else {
+//   drink2 = "water H2o";
+// }
+// console.log(drink2);
+
+////////////////////////////////////
+// Coding Challenge #4
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+TEST DATA: Test for bill values 275, 40 and 430
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+GOOD LUCK 😀
+*/
+
+const bill = 51;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `the bill was ${bill} and the tip was ${tip} and the total value ${
+    bill + tip
+  }`
+);
